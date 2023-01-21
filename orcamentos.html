@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <script src="https://unpkg.com/react@17/umd/react.development.js" ></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" ></script>
+    
+
+    <title>LDGAtech</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="./img/icon.png" alt="LDGAtech">&nbsp; LDGAtech</a>  <!-- utilizamos '&nbsp;' para fazer um espaco entre o logo e o nome da empresa -->
+            
+            <ul class="nav-menu">
+                <li><a href="./sobrenos.html">Sobre nós</a></li>
+                <li><a href="./orcamentos.html">Orçamentos</a></li>
+            </ul>
+            <div class="menu3barras">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main>
+        <div class="container_hometexto">
+            <h3>PEÇA UM ORÇAMENTO</h3>
+            <p>Analisámos e diagnóstico de avarias e orçamentos de reparação.</p>
+        </div>
+        <div class="container_homeimg"><img src="img/imagemOrcamento.jpg" class="img_home">
+    </main>
+
+   <!--<div id="root"></div> -->
+   <div class="container_apresentacao">
+    Sem compromisso, preencha o formulário abaixo com o máximo de informações possível acerca do problema do seu dispositivo, bem como as suas informações de contacto. Entraremos em contacto consigo logo de seguida.
+    </div>
+
+    <div class="form">
+        <div class="boxEsquerda">
+            <h3 class="textboxEsquerda">PEDIDO DE ORÇAMENTO E DIAGNÓSTICO GRÁTIS</h3>
+        </div>
+    
+        <div class="boxDiteira">
+            <form id="box-direita">
+                <fieldset>
+                    <div class="box-nome">
+                        <input type="text" id="nome" placeholder="Nome">
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                    <div class="box-sobrenome">
+                        <input type="text"  id="sobrenome" placeholder="Sobrenome">
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                    <div class="box-email">
+                        <input type="email" id="email" placeholder="Email">
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                    <div class="box-tele">    
+                        <input type="text" id="tele" placeholder="Telefone">
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                    <div class="box-tipo">
+                        <select id="tipo">
+                          <option selected disabled value="">Indique o tipo de dispositivo:</option>
+                          <option>Smartphone</option>
+                          <option>Tablet</option>
+                          <option>Computador portatil</option>
+                          <option>PC</option>
+                          <option>Outro</option>
+                        </select>
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                    <div class="box-sintomas">
+                        <select id="sintomas">
+                          <option selected disabled value="">Quais os sintomas:</option>
+                          <option>Nao liga</option>
+                          <option>Ecra partido</option>
+                          <option>teclado nao funciona</option>
+                          <option>Aquece muito</option>
+                          <option>Computador lento</option>
+                          <option>Outro</option>
+                        </select>
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                    <div class="box-detalhes">
+                        <textarea cols="5" rows="10" id="detalhes" name="detalhes" placeholder="Descreva com mais alguns detalhes o problema do aparelho:"></textarea>
+                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
+                    </div>
+                </fieldset>
+                <button id="botao" type="submit" >Pedir Orçamento</button>   
+            </form>
+        
+            <div id="messagemSucesso" style="display:none;">
+                <h3>O seu pedido de orçamento foi enviado com sucesso!</h3>
+                <p>Entraremos em contacto consigo assim que possível.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <div class="topo">
+        <a  href="#" >
+            <div class="botao" style="display:none;">
+                <ion-icon id="icon-botaotop" name="arrow-up-outline"></ion-icon>
+            </div>
+        </a> 
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        
+        
+        <div class="contacto">
+            <h3>Contactos</h3>
+            <ion-icon name="location-outline"></ion-icon><span>&nbsp;Av. Cidade Politécnica, Viseu</span>
+            <br>
+            <ion-icon name="call-outline"></ion-icon>&nbsp;232480500
+            <br>
+            <ion-icon name="mail-outline"></ion-icon>&nbsp;estgv@estgv.ipv.pt
+
+        </div>
+
+
+        <div class="horario">
+           <h3>Horários</h3>
+           <p> Segunda a sexta: 10:00 - 00:00 </p>
+           <p> Sábado: 10:00 - 12:00 </p>
+           <br>
+           <h4>Hora atual:</h4>
+           <h4 class="timer" id="timer"></h4>
+        </div>    
+      
+    </footer>
+
+    <script src="./js/react.js"></script>
+    <script src="./js/script.js"></script>
+
+     <!-- para poder usar icons -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
