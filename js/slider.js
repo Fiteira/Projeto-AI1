@@ -21,5 +21,5 @@ function showSlides()
   }
    
   slides[slideindex-1].style.display="block";
-  setTimeout(showSlides,2000);
+  setTimeout(showSlides,3000);
 }

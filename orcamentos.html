@@ -37,68 +37,28 @@
     <!-- MAIN -->
     <main>
         <div class="container_hometexto">
-            <h3>PEÇA UM ORÇAMENTO</h3>
-            <p>Analisámos e diagnóstico de avarias e orçamentos de reparação.</p>
+            <h3 class="hometextot">PEÇA UM ORÇAMENTO</h3>
+            <p>Diagnosticamos a avaria e realizamos o seu orçamento</p>
         </div>
         <div class="container_homeimg"><img src="img/imagemOrcamento.jpg" class="img_home">
     </main>
 
    <!--<div id="root"></div> -->
+
+   <div class="container_orc">
+    <h1>Peça o seu diagnóstigo e orçamento gratuitamente</h1>
+</div>
+
    <div class="container_apresentacao">
-    Sem compromisso, preencha o formulário abaixo com o máximo de informações possível acerca do problema do seu dispositivo, bem como as suas informações de contacto. Entraremos em contacto consigo logo de seguida.
+    Preencha o formulário abaixo com os dados necessários acerca do problema do seu dispositivo, assim como o seu contacto. Entraremos em consigo o mais rápido possível!
     </div>
 
     <div class="form">
-        <div class="boxEsquerda">
-            <h3 class="textboxEsquerda">PEDIDO DE ORÇAMENTO E DIAGNÓSTICO GRÁTIS</h3>
-        </div>
     
         <div class="boxDiteira">
             <form id="box-direita">
-                <fieldset>
-                    <div class="box-nome">
-                        <input type="text" id="nome" placeholder="Nome">
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
-                    <div class="box-sobrenome">
-                        <input type="text"  id="sobrenome" placeholder="Sobrenome">
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
-                    <div class="box-email">
-                        <input type="email" id="email" placeholder="Email">
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
-                    <div class="box-tele">    
-                        <input type="text" id="tele" placeholder="Telefone">
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
-                    <div class="box-tipo">
-                        <select id="tipo">
-                          <option selected disabled value="">Indique o tipo de dispositivo:</option>
-                          <option>Smartphone</option>
-                          <option>Tablet</option>
-                          <option>Computador portatil</option>
-                          <option>PC</option>
-                          <option>Outro</option>
-                        </select>
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
-                    <div class="box-sintomas">
-                        <select id="sintomas">
-                          <option selected disabled value="">Quais os sintomas:</option>
-                          <option>Nao liga</option>
-                          <option>Ecra partido</option>
-                          <option>teclado nao funciona</option>
-                          <option>Aquece muito</option>
-                          <option>Computador lento</option>
-                          <option>Outro</option>
-                        </select>
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
-                    <div class="box-detalhes">
-                        <textarea cols="5" rows="10" id="detalhes" name="detalhes" placeholder="Descreva com mais alguns detalhes o problema do aparelho:"></textarea>
-                        <small class="mesagemErro" style="display:none;">mensagem de erro</small>
-                    </div>
+                <fieldset id="form">
+                   
                 </fieldset>
                 <button id="botao" type="submit" >Pedir Orçamento</button>   
             </form>
@@ -147,7 +107,7 @@
       
     </footer>
 
-    <script src="./js/react.js"></script>
+    <script src="./react/react.js"></script>
     <script src="./js/script.js"></script>
 
      <!-- para poder usar icons -->

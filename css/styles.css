@@ -2,7 +2,7 @@
  /*principal*/
  
 *{
-    font-family: 'Chivo Mono';
+    font-family: Trebuchet MS, sans-serif;
     margin:0; 
     padding:0;
     box-sizing: border-box;
@@ -33,7 +33,7 @@ header{
 
 
 .logo{
-    color:#0a0ac2;
+    color:#ff0000;
     text-decoration: none;
     display: flex;
 	justify-content: center;
@@ -100,7 +100,7 @@ nav ul li:hover .submenu ul li{
 }
 
 nav ul li:hover .submenu ul li:hover{
-    color:#0a0ac2;
+    color:#ff0000;
     text-align:center;
     border-radius:10 px;
     transition: 0.7s;
@@ -109,7 +109,7 @@ nav ul li:hover .submenu ul li:hover{
 }
 
 a:hover{
-    color:#0a0ac2;
+    color:#ff0000;
 }
 
 .menu3barras{
@@ -151,15 +151,18 @@ a:hover{
     margin-top: 15%;
     position: absolute;
 }
+.hometextot{
+    color: #ff0000;
+}
 
 /*apresentação*/
 
  .container_apresentacao {
     color: black;
     width: 60%;
-    margin-left: 7%;
+    margin-left: 20%;
     font-size: 15pt;
-    margin-top: 1%;
+    margin-top: 5%;
     margin-bottom: 1%;
     text-align: justify;
 }
@@ -168,6 +171,7 @@ a:hover{
 /*slider galeria */
 
 .container_slidetext {
+    margin-top: 5%;
     color: rgb(2, 2, 2);
     font-size: 35pt;
     width: 100%;
@@ -186,7 +190,7 @@ a:hover{
 .container_slideshow {
     width: 50%;
     position: relative;
-    background-color: #0e87c4;
+    background-color: #ff0000;
     margin-left: 25%;
     height: 500px;
     margin-top: 2%;
@@ -229,18 +233,18 @@ iframe{
     height: 50%;
     float: left; 
     border-radius: 50%;
-    border: 6px solid black;
+    border: 6px solid #ff0000;
     margin-top: 3%;
-    margin-left: 15%;
+    margin-left: 13%;
 }
 
 .imagem-direita{
     width: 30%; 
     height: 50%;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 6px solid #ff0000;
     margin-top: 3%;
-    margin-left: 55%;  
+    margin-left: 57%;  
     
 }
 
@@ -253,17 +257,19 @@ iframe{
 .texto-esquerda{
     display: inline-block;
     margin-right: 26%;
-    margin-left: 22%;
-
+    margin-left: 19%;
+}
+.texto-direita{
+    margin-right: 40%;
 }
 
 /*orcamentos */
 
 fieldset{
     border: 1px black solid;
-    margin-right: 5%;
-    margin-left: 47%;
-    margin-top: 6%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 3%;
 }
 
 
@@ -275,14 +281,14 @@ fieldset{
 
 
 .boxDireita{
-    float: left;
     margin-top: 50%;
 }
 
-.textboxEsquerda{
-    margin-left: 34%;
-}
 
+.container_orc{
+    margin-left: 25%;
+    margin-top: 5%;
+}
 
 
 input,select,textarea{
@@ -317,7 +323,7 @@ small{
 }
 
 #botao{
-    background-color: gray;
+    background-color: #ff0000;
     border: none;
     color: white;
     padding: 9px 149px;
@@ -329,8 +335,7 @@ small{
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    margin-left: 4%;
-    margin-left: 60%;
+    margin-left: 40%;
     margin-top: 1%;
 }
 
@@ -340,7 +345,8 @@ small{
 
 #messagemSucesso{
     font-size: 30px;
-    margin-top: 11%;
+    margin-top: 7%;
+    margin-left: 25%;
 }
 
 
@@ -366,7 +372,7 @@ small{
 
  .footer{
     width: 100%;
-    background-color: #262626;
+    background-color: #ff0000;
     margin-top: -0.4%;
     display: inline-block;
     margin-bottom: -1%;
@@ -427,6 +433,9 @@ small{
         font-size: 20px;
     }
 
+    a:hover{
+        color: rgb(0, 0, 0);
+    }
 
     li{
         margin: 16px 0;
@@ -434,7 +443,7 @@ small{
 
     .nav-menu.active{
         left:0;
-        background-color: #334;
+        background-color: #ff0000;
     }
  
 
